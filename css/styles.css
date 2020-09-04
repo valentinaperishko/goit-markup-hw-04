@@ -453,24 +453,27 @@ address {
 .address-link:focus {
   color: var(--accent-color);
 }
-.join {
+/* .join {
   display: flex;
   flex-direction: column;
-  width: 270px;
-}
-b {
+} */
+/* b {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-}
-.footer-social {
+} */
+/* .footer-social {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
+/* .container.footer {
+  display: flex;
+  justify-content: flex-start;
+} */
 
 /* Стили для portfolio.html */
 .portfolio {
