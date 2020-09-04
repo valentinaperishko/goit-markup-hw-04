@@ -422,16 +422,18 @@ span {
   padding-bottom: 60px;
   background-color: var(--footer-color);
 }
-
+.container.footer {
+  padding: 0;
+  /* width: 270px; */
+}
 address {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   color: var(--primary-white-color);
+  font-style: normal;
 }
-.address-info {
-  width: 270px;
-}
+
 .address-link {
   margin-top: 9px;
   margin-bottom: 9px;
@@ -447,7 +449,6 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  font-style: normal;
 }
 .address-link:hover,
 .address-link:focus {
@@ -456,21 +457,21 @@ address {
 /* .join {
   display: flex;
   flex-direction: column;
-} */
-/* b {
+}
+b {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-} */
-/* .footer-social {
+}
+.footer-social {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
-/* .container.footer {
+}
+.container.footer {
   display: flex;
   justify-content: flex-start;
 } */
