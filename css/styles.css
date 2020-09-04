@@ -117,8 +117,8 @@ span {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contact .contact-item:hover,
-.contact .contact-item:focus {
+.contact-item:hover,
+.contact-item:focus {
   color: var(--accent-color);
 }
 .tel-item-svg {
