@@ -122,14 +122,14 @@ span {
   color: var(--accent-color);
 }
 .tel-item-svg {
-  width: 10px;
-  height: 16px;
+  width: 16px;
+  height: 18px;
   fill: var(--primary-text-color);
   vertical-align: middle;
 }
 .mail-item-svg {
-  width: 12px;
-  height: 16px;
+  width: 16px;
+  height: 18px;
   fill: var(--primary-text-color);
   vertical-align: middle;
 }
@@ -342,12 +342,44 @@ span {
 }
 .text-mate {
   margin-top: 0;
+  margin-bottom: 16px;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-list-item .link-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+  justify-content: center;
+  align-items: center;
+}
+.social-item-svg {
+  fill: #afb1b8;
+}
+.social-item-svg:hover,
+.social-item-svg:focus {
+  fill: var(--primary-white-color);
+}
+.link-item:hover,
+.link-item:focus {
+  background-color: var(--accent-color);
+}
+.social-item-svg {
+  width: 20px;
+  height: 20px;
 }
 /* Projects */
 .project .project-title {
