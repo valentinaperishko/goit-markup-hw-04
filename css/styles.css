@@ -136,8 +136,13 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2f303a;
   height: 600px;
+  max-width: 1800px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 1600px 600px;
 }
 
 .hero-section {
@@ -215,6 +220,15 @@ span {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+.feature-list .item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-image: url("./images/feature1.svg");
+  background-color: #f5f4fa;
+  background-position: center;
 }
 /* Section */
 .section .section-title {
