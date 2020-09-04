@@ -121,6 +121,10 @@ span {
 .contact .contact-item:focus {
   color: var(--accent-color);
 }
+.address-item-svg {
+  width: 10px;
+  color: var(--primary-text-color);
+}
 /* Section hero */
 .hero-title {
   margin-top: 0;
