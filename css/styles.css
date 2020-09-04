@@ -121,9 +121,21 @@ span {
 .contact .contact-item:focus {
   color: var(--accent-color);
 }
-.address-item-svg {
+.tel-item-svg {
   width: 10px;
-  color: var(--primary-text-color);
+  height: 16px;
+  fill: var(--primary-text-color);
+}
+.mail-item-svg {
+  width: 12px;
+  height: 16px;
+  fill: var(--primary-text-color);
+}
+.mail-item-svg,
+.tel-item-svg:hover,
+.mail-item-svg,
+.tel-item-svg:focus {
+  fill: var(--accent-color);
 }
 /* Section hero */
 .hero-title {
@@ -141,9 +153,9 @@ span {
   justify-content: center;
   align-items: center;
   height: 600px;
-  max-width: 1800px;
+  max-width: 1600px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/hero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 1600px 600px;
