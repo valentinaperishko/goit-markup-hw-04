@@ -125,15 +125,19 @@ span {
   width: 10px;
   height: 16px;
   fill: var(--primary-text-color);
+  vertical-align: middle;
 }
 .mail-item-svg {
   width: 12px;
   height: 16px;
   fill: var(--primary-text-color);
+  vertical-align: middle;
 }
-.mail-item-svg,
+.mail-item-svg:hover,
+.mail-item-svg:focus {
+  fill: var(--accent-color);
+}
 .tel-item-svg:hover,
-.mail-item-svg,
 .tel-item-svg:focus {
   fill: var(--accent-color);
 }
