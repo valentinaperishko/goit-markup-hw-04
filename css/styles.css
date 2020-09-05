@@ -506,8 +506,8 @@ b {
   width: 20px;
   height: 20px;
 }
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-item:hover,
+.footer-item:focus {
   background-color: var(--accent-color);
 }
 
