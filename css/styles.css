@@ -605,5 +605,5 @@ b {
 }
 .project-item:hover,
 .project-item:focus {
-  color: rgba(33, 150, 243, 0.9);
+  box-shadow: rgba(33, 150, 243, 0.9);
 }
