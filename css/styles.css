@@ -370,9 +370,12 @@ span {
   justify-content: center;
   align-items: center;
 }
-.social-item-svg {
+.link-item .social-item-svg {
   fill: #afb1b8;
+  width: 20px;
+  height: 20px;
 }
+
 .link-item:hover .social-item-svg,
 .link-item:focus .social-item-svg {
   fill: var(--primary-white-color);
@@ -381,10 +384,7 @@ span {
 .link-item:focus {
   background-color: var(--accent-color);
 }
-.social-item-svg {
-  width: 20px;
-  height: 20px;
-}
+
 /* Clients */
 .client-list {
   display: flex;
@@ -418,15 +418,27 @@ span {
 }
 /* Footer */
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--footer-color);
+  max-height: 252px;
 }
+
 .container.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding: 0;
-  /* width: 270px; */
+  margin-left: 93px;
+  margin-right: 0;
+  max-width: 270px;
 }
-address {
+.address-items {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -435,6 +447,8 @@ address {
 }
 
 .address-link {
+  display: flex;
+  flex-direction: column;
   margin-top: 9px;
   margin-bottom: 9px;
   color: var(--address-color);
@@ -454,11 +468,17 @@ address {
 .address-link:focus {
   color: var(--accent-color);
 }
-/* .join {
+.container.join {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  margin-right: 0;
+  padding: 0;
+  max-width: 270px;
 }
 b {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -468,13 +488,28 @@ b {
 }
 .footer-social {
   display: flex;
+}
+.footer-social-link .footer-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
 }
-.container.footer {
-  display: flex;
-  justify-content: flex-start;
-} */
+.footer-social-link:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-item .social-item-svg {
+  fill: var(--primary-white-color);
+  width: 20px;
+  height: 20px;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
 
 /* Стили для portfolio.html */
 .portfolio {
