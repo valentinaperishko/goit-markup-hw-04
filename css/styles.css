@@ -603,3 +603,7 @@ b {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+.project-item:hover,
+.project-item:focus {
+  color: rgba(33, 150, 243, 0.9);
+}
