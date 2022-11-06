@@ -4,7 +4,9 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --background-color: #2f303a;
+  --secondary-bcg-color: #f5f4fa;
   --logo-black-color: #000000;
+  --social-color: #afb1b8;
   --card-set-gap: 30px;
 }
 
@@ -268,7 +270,7 @@ address {
   height: 120px;
   margin-bottom: 30px;
 
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bcg-color);
   text-align: center;
   border-radius: 4px;
 }
@@ -315,12 +317,17 @@ address {
 /*Секція команди*/
 
 .team-section {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bcg-color);
 }
 
 .team-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.team-list-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-list-item + .team-list-item {
@@ -331,8 +338,6 @@ address {
   background-color: var(--primary-white-color);
   padding-top: 30px;
   padding-bottom: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-list-title {
@@ -347,11 +352,97 @@ address {
 
 .team-list-text {
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
 
   text-align: center;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+}
+
+.social-link {
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--social-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.social-link:active {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.social-link-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social-list-item {
+  text-align: center;
+}
+
+.social-list-item + .social-list-item {
+  margin-left: 10px;
+}
+
+/* Секція клієнти */
+
+.client-list {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+
+.client-list-item + .client-list-item {
+  margin-left: 30px;
+}
+
+.client-list-item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-color);
+  border-radius: 4px;
+}
+
+.client-list-item:hover,
+.client-list-item:focus {
+  border-color: var(--accent-color);
+}
+
+.client-list-item:active {
+  border-color: var(--accent-color);
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+
+  fill: var(--social-color);
+}
+
+.client-list-item:hover .client-icon,
+.client-list-item:focus .client-icon {
+  fill: var(--accent-color);
+}
+
+.client-list-item:active .client-icon {
+  fill: var(--accent-color);
 }
 
 /* Футер */
@@ -419,7 +510,7 @@ address {
   padding: 6px 22px;
   border-radius: 4px;
 
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bcg-color);
   color: var(--primary-text-color);
 
   font-family: inherit;
