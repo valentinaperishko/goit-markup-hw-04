@@ -366,29 +366,30 @@ address {
 }
 
 .social-link {
-  display: inline-block;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--social-color);
+  color: var(--social-color);
 }
 
 .social-link:hover,
 .social-link:focus {
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
 .social-link:active {
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
 .social-link-icon {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 
 .social-list-item {
@@ -516,10 +517,15 @@ b {
 }
 
 .footer-social {
+  display: flex;
   margin-top: 20px;
 }
 
-.footer-social-link {
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+
+.footer-link {
   display: inline-block;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -530,12 +536,12 @@ b {
   text-align: center;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-link:hover,
+.footer-link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-social-link:active {
+.footer-link:active {
   background-color: var(--accent-color);
 }
 
