@@ -169,22 +169,22 @@ address {
 
 .mobile-icon {
   margin-right: 10px;
-  fill: var(--secondary-text-color);
+  fill: currentColor;
 }
 
 .mail-icon {
   margin-right: 10px;
-  fill: var(--secondary-text-color);
+  fill: currentColor;
 }
 
-.contact-list-link:hover .mail-icon,
-.contact-list-link:focus .mail-icon {
-  fill: var(--accent-color);
+.mail-icon:hover,
+.mail-icon:focus {
+  fill: currentColor;
 }
 
-.contact-list-link:hover .mobile-icon,
-.contact-list-link:focus .mobile-icon {
-  fill: var(--accent-color);
+.mobile-icon:hover,
+.mobile-icon:focus {
+  fill: currentColor;
 }
 
 /* Cтилі головної частини*/
