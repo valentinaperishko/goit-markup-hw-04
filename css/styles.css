@@ -182,8 +182,16 @@ address {
   fill: currentColor;
 }
 
+.mail-icon:active {
+  fill: currentColor;
+}
+
 .mobile-icon:hover,
 .mobile-icon:focus {
+  fill: currentColor;
+}
+
+.mobile-icon:active {
   fill: currentColor;
 }
 
