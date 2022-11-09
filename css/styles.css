@@ -433,11 +433,11 @@ address {
 
 .client-list-link:hover,
 .client-list-link:focus {
-  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .client-list-link:active {
-  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .client-icon {
@@ -447,13 +447,13 @@ address {
   fill: currentColor;
 }
 
-.client-list-link:hover .client-icon,
-.client-list-link:focus .client-icon {
-  fill: var(--accent-color);
+.client-icon:hover,
+.client-icon:focus {
+  fill: currentColor;
 }
 
-.client-list-link:active .client-icon {
-  fill: var(--accent-color);
+.client-icon:active {
+  fill: currentColor;
 }
 
 /* Футер */
