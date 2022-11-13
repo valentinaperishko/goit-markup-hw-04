@@ -521,7 +521,7 @@ address {
   align-items: baseline;
 }
 
-b {
+.footer-text {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
